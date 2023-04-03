@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:context=".Disclaimer">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Privacy Policy\n"
+                        android:textColor="@color/purple_700"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" We have approval for this study from the Telecommunications, Networks and IT Department, National School of Applied Sciences of El Jadida,Morocco. We are subject to the General Data Protection Regulation.\n\nSensitive Data we are collecting:"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="\n\u2022Chest images (as captured by you through the app)
+    \n\u2022Some medical history questions
+    \n\u2022Some demographics (age, gender)
+"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="\nNo further personal information will be collected. The data will be transmitted encrypted to the server. We will not collect identifiers which allow us to identify the user. The app displays a consent screen, where we ask the user’s permission to participate in the study by using the app. The data will be used by researchers in the team to understand the relationship of the COVID-19 disease with images.\n\nData may be preprocessed and shared more widely with researchers at other institutions in both Morocco and overseas. Any data shared will be handled carefully by recipients and contractual arrangements will be put in place to ensure the confidentiality and security of the data, including any necessary contractual or other safeguards should the data be transferred outside Morocco. Incidental findings will not be fed back to participants or other parties. Users can leave the app and delete it at any time. Participants must be 16 years or older. Please note that any data already shared with researchers at other institutions will not be deleted from their copies.\n\nFor further general information about the National School of Applied Sciences of El Jadida’s use of your personal data as a participant in a research study, please see here. Please note that the legal basis for processing any personal data collected by this project is to perform a task in the public interest, namely academic research.\n\nThe app won't offer any medical advice and it only collects data for research. "
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+            <CheckBox
+                android:id="@+id/checkBox_privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="@color/purple_500"
+                android:text="I agree"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/start_app"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="START"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

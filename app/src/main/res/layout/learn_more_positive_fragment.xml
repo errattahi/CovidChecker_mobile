@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:context=".fragments.LearnMorePositiveFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Guidelines"
+                android:textColor="@color/green"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is what you should do :"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardElevation="2dp"
+                        tools:ignore="MissingConstraints">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:paddingBottom="10dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/white"
+                            android:elevation="10dp"
+                            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/ic_risk_details_wash"
+                                app:tint="@color/green" />
+
+                            <TextView
+                                android:id="@+id/label_revenue_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="85dp"
+                                android:layout_marginTop="17dp"
+                                android:text="Wach your hands regularly, with soap, for 20 seconds."
+                                android:textColor="@color/black"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardElevation="2dp"
+                        tools:ignore="MissingConstraints">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:paddingBottom="10dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/white"
+                            android:elevation="10dp"
+                            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/ic_risk_details_mask"
+                                app:tint="@color/green" />
+
+                            <TextView
+                                android:id="@+id/label_revenue_date2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="85dp"
+                                android:layout_marginTop="17dp"
+                                android:text="Wear a face mask when you encounter other people."
+                                android:textColor="@color/black"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardElevation="2dp"
+                        tools:ignore="MissingConstraints">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:paddingBottom="10dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/white"
+                            android:elevation="10dp"
+                            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/ic_risk_details_distance"
+                                app:tint="@color/green" />
+
+                            <TextView
+                                android:id="@+id/label_revenue_date3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="85dp"
+                                android:layout_marginTop="17dp"
+                                android:text="Keep at least 1.5 meters distance from other people."
+                                android:textColor="@color/black"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardElevation="2dp"
+                        tools:ignore="MissingConstraints">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:paddingBottom="10dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/white"
+                            android:elevation="10dp"
+                            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/ic_risk_details_sneeze"
+                                app:tint="@color/green" />
+
+                            <TextView
+                                android:id="@+id/label_revenue_date4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="85dp"
+                                android:layout_marginTop="17dp"
+                                android:text="Sneeze or cough into your elbow or a tissue."
+                                android:textColor="@color/black"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardElevation="2dp"
+                        tools:ignore="MissingConstraints">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:paddingBottom="10dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/white"
+                            android:elevation="10dp"
+                            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="17dp"
+                                app:srcCompat="@drawable/ic_risk_details_ventilation"
+                                app:tint="@color/green" />
+
+                            <TextView
+                                android:id="@+id/label_revenue_date5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="85dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Air out indoor spaces several times per day. To do so, open the windows as far as possible for several minutes."
+                                android:textColor="@color/black"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

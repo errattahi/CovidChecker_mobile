@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:context=".fragments.DiseasesFragment">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:max="100"
+        android:progress="66"
+        android:progressTint="@color/purple_700" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="About your health"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/diseases" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you suffer from any of these diseases? (you can choose more than one)"
+                android:textColor="@color/purple_700"
+                android:textSize="15dp" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <CheckBox
+                        android:id="@+id/disease1"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="None" />
+
+                    <CheckBox
+                        android:id="@+id/disease2"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Asthma" />
+
+                    <CheckBox
+                        android:id="@+id/disease3"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Cystic fibrosis" />
+
+                    <CheckBox
+                        android:id="@+id/disease4"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Pulmonary fibrosis" />
+
+                    <CheckBox
+                        android:id="@+id/disease5"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Other lung disease" />
+
+                    <CheckBox
+                        android:id="@+id/disease6"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="High blood pressure" />
+
+                    <CheckBox
+                        android:id="@+id/disease7"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Angina" />
+
+                    <CheckBox
+                        android:id="@+id/disease8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="History of stroke or transient ischemic attack" />
+
+                    <CheckBox
+                        android:id="@+id/disease9"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Previous stroke or Transient Ishaemic attack" />
+
+                    <CheckBox
+                        android:id="@+id/disease10"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Valvular heart disease" />
+
+                    <CheckBox
+                        android:id="@+id/disease11"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Other heart disease" />
+
+                    <CheckBox
+                        android:id="@+id/disease12"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Diabetes" />
+
+                    <CheckBox
+                        android:id="@+id/disease13"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Cancer" />
+
+                    <CheckBox
+                        android:id="@+id/disease14"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Previous organ transplant" />
+
+                    <CheckBox
+                        android:id="@+id/disease15"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="HIV or an impaired immune system" />
+
+                    <CheckBox
+                        android:id="@+id/disease16"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Other long-term condition" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/previous1"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="PREVIOUS"
+                    android:textSize="18dp"
+                    app:icon="@drawable/baseline_arrow_back_ios_24"
+                    app:iconGravity="start"
+                    app:iconSize="30dp"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/next2"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="NEXT"
+                    android:textSize="18dp"
+                    app:icon="@drawable/baseline_arrow_forward_ios_24"
+                    app:iconGravity="end"
+                    app:iconSize="30dp"
+                    app:strokeWidth="2dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

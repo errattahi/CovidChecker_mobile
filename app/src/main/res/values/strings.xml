@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">COVID-AI</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+    <array name="ages">
+        <item>Under 20</item>
+        <item>20-29</item>
+        <item>30-39</item>
+        <item>40-49</item>
+        <item>50-59</item>
+        <item>60-69</item>
+        <item>70-79</item>
+        <item>80-89</item>
+        <item>90 or older</item>
+    </array>
+
+    <array name="regions">
+        <item>Tanger-Tétouan-Al Hoceïma</item>
+        <item>L\'Oriental</item>
+        <item>Fès-Meknès</item>
+        <item>Rabat-Salé-Kénitra</item>
+        <item>Béni Mellal-Khénifra</item>
+        <item>Casablanca-Settat</item>
+        <item>Marrakech-Safi</item>
+        <item>Drâa-Tafilalet</item>
+        <item>Souss-Massa</item>
+        <item>Guelmim-Oued Noun</item>
+        <item>Laâyoune-Sakia El Hamra</item>
+        <item>Dakhla-Oued Ed-Dahab</item>
+    </array>
+
+    <array name="smoker">
+        <item>Never smoked</item>
+        <item>Ex-smoker</item>
+        <item>Current smoker (1-10 cigarettes per day)</item>
+        <item>Current smoker (11 or more cigarettes per day)</item>
+    </array>
+
+    <array name="pcr">
+        <item>I don\'t have a PCR test</item>
+        <item>Positive</item>
+        <item>Negative</item>
+    </array>
+
+    <array name="pcr_positive">
+        <item>In the last 14 days</item>
+        <item>More than 14 days ago</item>
+    </array>
+
+    <string-array name="id_activityScreenTitles">
+        <item></item>
+        <item />
+        <item>Self-Screening</item>
+        <item>Sponsors &amp; Partners</item>
+        <item>About</item>
+        <item />
+        <item>Quit</item>
+    </string-array>
+
+    <array name="id_activityScreenIcons">
+        <item>@drawable/baseline_close_36</item>
+        <item>0</item>
+        <item>@drawable/outline_coronavirus_24</item>
+        <item>@drawable/outline_groups_24</item>
+        <item>@drawable/outline_info_24</item>
+        <item>0</item>
+        <item>@drawable/baseline_logout_24</item>
+    </array>
+
+</resources>

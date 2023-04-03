@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:context=".fragments.AboutFragment">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:elevation="15dp"
+        android:outlineAmbientShadowColor="@color/black"
+        app:srcCompat="@mipmap/logo2" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="25dp"
+    android:elevation="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:text="This app is part of a search project at the National School of Applied Science – University Chouaib Doukkali. The aim of this project is to develop a lightweight cross-platform App for the automatic screening of COVID-19. The envisaged approach is based on the automatic classification of x-ray chest images using advanced image processing and machine learning (ML) techniques. The system will be designed to identify abnormalities and estimate the extent of lung infection in real time and automatically detect high-risk patients with pneumonia or other pulmonary symptoms of COVID-19. Identifying a visual signature associated with COVID-19 is attractive, as the test would be very portable, simple to perform, inexpensive, and could provide primary screening for COVID-19 in areas where test kits and / or medical expertise is not available or insufficient (rural and remote regions, foci of infection and population clusters at risk). The images and meta-data uploaded to the screening system will be used subsequently to increase the training dataset of the ML models and incrementally improve the accuracy and reliability of Covid-19 tests. The data will be stored on University servers and be used solely for research purposes."
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+</ScrollView>
+
+
+</LinearLayout>

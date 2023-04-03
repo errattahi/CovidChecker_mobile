@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:elevation="15dp"
+        android:outlineAmbientShadowColor="@color/black"
+        app:srcCompat="@mipmap/logo2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Welcome to COVID-AI"
+        android:textColor="@color/purple_700"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_self_screening"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="15dp"
+                    android:backgroundTint="@color/white"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/outline_coronavirus_24"
+                            app:tint="@color/purple_700" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Self-Screening"
+                            android:textColor="@color/purple_500"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_sponsors_partners"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="15dp"
+                    android:backgroundTint="@color/white"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/outline_groups_24"
+                            app:tint="@color/purple_700" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Sponsors &amp; Partners"
+                            android:textColor="@color/purple_500"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_about"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="15dp"
+                android:backgroundTint="@color/white"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/outline_info_24"
+                        app:tint="@color/purple_700" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="About"
+                        android:textColor="@color/purple_500"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

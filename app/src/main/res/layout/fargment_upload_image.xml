@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6E6E6"
+    tools:context=".fragments.UploadImageFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@mipmap/upload_img" />
+
+    <Button
+        android:id="@+id/upload_button"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Upload Image"
+        android:textSize="18dp"
+        app:icon="@drawable/baseline_upload_24"
+        app:iconGravity="start"
+        app:iconSize="30dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/purple_700"
+                android:textSize="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/retry"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="RETRY"
+                    android:textSize="18dp"
+                    app:icon="@drawable/outline_cached_24"
+                    app:iconGravity="start"
+                    app:iconSize="30dp"/>
+
+                <Button
+                    android:id="@+id/learn_more"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="LEARN MORE"
+                    android:textSize="18dp"
+                    app:icon="@drawable/outline_lightbulb_24"
+                    app:iconGravity="start"
+                    app:iconSize="30dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp" />
+
+
+</LinearLayout>
