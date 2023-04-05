@@ -32,8 +32,8 @@ To use the application, simply run it on your Android mobile device. The user in
 
 ## Credits
 
-This project was developed by [insert names here].
+This project was developed by ENSAJ Team.
 
 ## License
 
-This project is licensed under the [insert license here].
+This project is licensed under the MIT license.
